@@ -1,0 +1,47 @@
+<h1>Cats!</h1>
+
+<h2>Cats that are not sleepy!</h2>
+
+<ul>
+    {{#each burgerx}}
+    {{#unless devoured}}
+    <li>
+        {{burger_name}}
+
+        <button class="eatburger" data-id="{{this.id}}">EAT!</button>
+    </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+    {{#each burgerx}}
+    {{#if devoured}}
+
+
+    <li>
+        {{burger_name}}
+
+    </li>
+
+
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h1 id="test"></h1>
+<h2>Add a burger</h2>
+
+
+<div class="form-group">
+    <label for="ca">burger Name:</label>
+    <input type="text" id="bu">
+</div>
+
+
+<button id="add">Add Burger</button>
+
+
+<button id="isabel">TEST</button>
