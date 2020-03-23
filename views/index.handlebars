@@ -1,42 +1,93 @@
-<h1>Cats!</h1>
+<div class="jumbotron mx-auto">
+    <h1 class="display-4">Eat-da-Burger!</h1>
+    <div><img src="../assets/image/burger.png" class="rounded float-left" alt="burger" width="200" height="133"></div>
+    <p class="lead">Hurry up</p>
+    <hr class="my-4">
+    <p>add your next burger </p>
+    {{!-- <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p> --}}
+    <div class="form-group">
+        <label for="ca">burger Name:</label>
+        <input type="text" id="bu">
+    </div>
+    <button id="add">Add Burger</button>
 
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-    {{#each burgerx}}
-    {{#unless devoured}}
-    <li>
-        {{burger_name}}
-
-        <button class="eatburger" data-id="{{this.id}}">EAT!</button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-    {{#each burgerx}}
-    {{#if devoured}}
-
-
-    <li>
-        {{burger_name}}
-
-    </li>
-
-
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h1 id="test"></h1>
-<h2>Add a burger</h2>
-
-
-<div class="form-group">
-    <label for="ca">burger Name:</label>
-    <input type="text" id="bu">
 </div>
 
+<div class="container mx-auto">
+    <div class="row">
+        <div class="col">
+            <h1>Burger!</h1>
+ 
+  
+
+            <ul>
+                {{#each burgerx}}
+                {{#unless devoured}}
+                <li><i class="fas fa-hamburger"></i>
+                    {{burger_name}}
+
+
+{{!-- <button  class="eatburger btn btn-primary"  data-id="{{this.id}}"style="padding-top:1px; padding-bottom:1px;">
+  EAT! 2
+</button> --}}
+
+<!-- Modal -->
+<div class="modal fade eatburger" id="exampleModal" data-id="{{this.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Devoured Burger</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Yummy
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="burger app">Devour</button>
+ 
+
+
+                        
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col">
+
+          <h2>Devoured Burger!</h2>
+
+            <ul>
+                {{#each burgerx}}
+                {{#if devoured}}
+
+
+                <li>
+                    <i class="fas fa-teeth-open"></i>
+                    {{burger_name}}
+
+                </li>
+
+
+                {{/if}}
+                {{/each}}
+            </ul>
+ 
+          
+        </div>
+    </div>
+</div>
