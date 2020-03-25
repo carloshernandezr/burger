@@ -8,4 +8,11 @@ Eat-da-Burger
 
 * Your app will store every burger in a database, whether devoured or not.
 
-![Imagen1](https://user-images.githubusercontent.com/56489980/77573247-ffdbd180-6e95-11ea-8fa9-d68f0043d208.png)
+deployed link: https://burgerappx.herokuapp.com/
+Repository: https://github.com/carloshernandezr
+
+![Imagen1](https://user-images.githubusercontent.com/56489980/77573398-3c0f3200-6e96-11ea-91db-7d3c5fb675ab.png)
+
+
+Put the name and click "add", in the left part, you see the name for the new burger, click in "Devour" and after that you move your burger to the right part of the screen.
+
