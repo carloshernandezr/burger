@@ -8,3 +8,4 @@ Eat-da-Burger
 
 * Your app will store every burger in a database, whether devoured or not.
 
+![Imagen1](https://user-images.githubusercontent.com/56489980/77573247-ffdbd180-6e95-11ea-8fa9-d68f0043d208.png)
